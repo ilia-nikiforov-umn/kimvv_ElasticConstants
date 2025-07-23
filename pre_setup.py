@@ -13,7 +13,7 @@ import tomlkit
 OPENKIM_TEST_DRIVERS = ["EquilibriumCrystalStructure__TD_457028483760_003"]
 
 # List of URLs of development Test Drivers to test
-DEVEL_TEST_DRIVERS = ["https://drive.google.com/uc?export=download&id=1Loziagm1hzmoDhtVR6jBUEufCWCabtUk"]
+DEVEL_TEST_DRIVERS = ["https://openkim.org/contribute/TD_034002468289_001/archive?compression=xz"]
 
 
 def create_init(td_root_path: os.PathLike):
@@ -58,7 +58,7 @@ if __name__ == "__main__":
         tmpfile, _ = urlretrieve(test_driver)
         # Extract it to a temporary directory
         with TemporaryDirectory() as tmpdir:
-            with tarfile.open(tmpfile, "r:gz") as f:
+            with tarfile.open(tmpfile, "r:xz") as f:
                 f.extractall(tmpdir)
             # Find the kimspec.edn
             kimspec_match = Path(tmpdir).rglob("kimspec.edn")
