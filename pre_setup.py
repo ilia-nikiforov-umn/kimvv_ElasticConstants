@@ -13,7 +13,7 @@ import tomlkit
 OPENKIM_TEST_DRIVERS = ["EquilibriumCrystalStructure__TD_457028483760_003"]
 
 # List of URLs of development Test Drivers to test
-DEVEL_TEST_DRIVERS = ["https://drive.google.com/uc?export=download&id=1dZZ7TtxdISwsvym9G_NnGXU04Kgrri2C"]
+DEVEL_TEST_DRIVERS = ["https://drive.google.com/uc?export=download&id=1Loziagm1hzmoDhtVR6jBUEufCWCabtUk"]
 
 
 def create_init(td_root_path: os.PathLike):
